@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6145FDEFCC9D46122C467C8 /* Pods_StefaniniChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19ADD267A60AE6DF4BA186E /* Pods_StefaniniChallenge.framework */; };
 		EA744A7C276913D000106B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A7B276913D000106B8B /* AppDelegate.swift */; };
 		EA744A7E276913D000106B8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A7D276913D000106B8B /* SceneDelegate.swift */; };
-		EA744A80276913D000106B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A7F276913D000106B8B /* ViewController.swift */; };
 		EA744A83276913D000106B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA744A81276913D000106B8B /* Main.storyboard */; };
 		EA744A85276913D100106B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA744A84276913D100106B8B /* Assets.xcassets */; };
 		EA744A88276913D100106B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA744A86276913D100106B8B /* LaunchScreen.storyboard */; };
 		EA744A93276913D200106B8B /* StefaniniChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A92276913D200106B8B /* StefaniniChallengeTests.swift */; };
 		EA744A9D276913D200106B8B /* StefaniniChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A9C276913D200106B8B /* StefaniniChallengeUITests.swift */; };
 		EA744A9F276913D200106B8B /* StefaniniChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744A9E276913D200106B8B /* StefaniniChallengeUITestsLaunchTests.swift */; };
+		EA744AAC276914B100106B8B /* ImgurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA744AAB276914B100106B8B /* ImgurViewController.swift */; };
+		EA87C17127699BB40091FB46 /* ImgurModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C17027699BB40091FB46 /* ImgurModel.swift */; };
+		EA87C17427699DEA0091FB46 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C17327699DEA0091FB46 /* NetworkService.swift */; };
+		EA87C176276A2BCE0091FB46 /* ImgurCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C175276A2BCE0091FB46 /* ImgurCollectionViewCell.swift */; };
+		EA87C17A276A30060091FB46 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87C179276A30060091FB46 /* UIImageView+LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C796413D3AA2D7074433F18 /* Pods-StefaniniChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StefaniniChallenge.debug.xcconfig"; path = "Target Support Files/Pods-StefaniniChallenge/Pods-StefaniniChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		C19ADD267A60AE6DF4BA186E /* Pods_StefaniniChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StefaniniChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA744A78276913D000106B8B /* StefaniniChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StefaniniChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA744A7B276913D000106B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA744A7D276913D000106B8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA744A7F276913D000106B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA744A82276913D000106B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA744A84276913D100106B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA744A87276913D100106B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		EA744A98276913D200106B8B /* StefaniniChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StefaniniChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA744A9C276913D200106B8B /* StefaniniChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefaniniChallengeUITests.swift; sourceTree = "<group>"; };
 		EA744A9E276913D200106B8B /* StefaniniChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StefaniniChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA744AAB276914B100106B8B /* ImgurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurViewController.swift; sourceTree = "<group>"; };
+		EA87C17027699BB40091FB46 /* ImgurModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurModel.swift; sourceTree = "<group>"; };
+		EA87C17327699DEA0091FB46 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EA87C175276A2BCE0091FB46 /* ImgurCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA87C179276A30060091FB46 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		EEC3E539FD3D52376CEBA9EE /* Pods-StefaniniChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StefaniniChallenge.release.xcconfig"; path = "Target Support Files/Pods-StefaniniChallenge/Pods-StefaniniChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6145FDEFCC9D46122C467C8 /* Pods_StefaniniChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5675498F16EB3387802A5141 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19ADD267A60AE6DF4BA186E /* Pods_StefaniniChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CD5F0B69CC1C0992033CFEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C796413D3AA2D7074433F18 /* Pods-StefaniniChallenge.debug.xcconfig */,
+				EEC3E539FD3D52376CEBA9EE /* Pods-StefaniniChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA744A6F276913D000106B8B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				EA744A91276913D200106B8B /* StefaniniChallengeTests */,
 				EA744A9B276913D200106B8B /* StefaniniChallengeUITests */,
 				EA744A79276913D000106B8B /* Products */,
+				7CD5F0B69CC1C0992033CFEF /* Pods */,
+				5675498F16EB3387802A5141 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +131,12 @@
 		EA744A7A276913D000106B8B /* StefaniniChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				EA744A7B276913D000106B8B /* AppDelegate.swift */,
-				EA744A7D276913D000106B8B /* SceneDelegate.swift */,
-				EA744A7F276913D000106B8B /* ViewController.swift */,
+				EA87C17227699C060091FB46 /* AppDelegate */,
+				EA87C178276A2FED0091FB46 /* Utils */,
+				EA87C177276A2FCF0091FB46 /* Network */,
+				EA87C17027699BB40091FB46 /* ImgurModel.swift */,
+				EA744AAB276914B100106B8B /* ImgurViewController.swift */,
+				EA87C175276A2BCE0091FB46 /* ImgurCollectionViewCell.swift */,
 				EA744A81276913D000106B8B /* Main.storyboard */,
 				EA744A84276913D100106B8B /* Assets.xcassets */,
 				EA744A86276913D100106B8B /* LaunchScreen.storyboard */,
@@ -127,6 +162,31 @@
 			path = StefaniniChallengeUITests;
 			sourceTree = "<group>";
 		};
+		EA87C17227699C060091FB46 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EA744A7B276913D000106B8B /* AppDelegate.swift */,
+				EA744A7D276913D000106B8B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EA87C177276A2FCF0091FB46 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA87C17327699DEA0091FB46 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA87C178276A2FED0091FB46 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA87C179276A30060091FB46 /* UIImageView+LoadImage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA744AA2276913D200106B8B /* Build configuration list for PBXNativeTarget "StefaniniChallenge" */;
 			buildPhases = (
+				12A9A70BE7D1164FD573EAB2 /* [CP] Check Pods Manifest.lock */,
 				EA744A74276913D000106B8B /* Sources */,
 				EA744A75276913D000106B8B /* Frameworks */,
 				EA744A76276913D000106B8B /* Resources */,
+				A59EF41E0C1CC07D5E0F65BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +315,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12A9A70BE7D1164FD573EAB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StefaniniChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A59EF41E0C1CC07D5E0F65BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StefaniniChallenge/Pods-StefaniniChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StefaniniChallenge/Pods-StefaniniChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StefaniniChallenge/Pods-StefaniniChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA744A74276913D000106B8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA744A80276913D000106B8B /* ViewController.swift in Sources */,
+				EA87C17427699DEA0091FB46 /* NetworkService.swift in Sources */,
+				EA87C176276A2BCE0091FB46 /* ImgurCollectionViewCell.swift in Sources */,
+				EA744AAC276914B100106B8B /* ImgurViewController.swift in Sources */,
+				EA87C17A276A30060091FB46 /* UIImageView+LoadImage.swift in Sources */,
 				EA744A7C276913D000106B8B /* AppDelegate.swift in Sources */,
+				EA87C17127699BB40091FB46 /* ImgurModel.swift in Sources */,
 				EA744A7E276913D000106B8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +542,7 @@
 		};
 		EA744AA3276913D200106B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C796413D3AA2D7074433F18 /* Pods-StefaniniChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +571,7 @@
 		};
 		EA744AA4276913D200106B8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC3E539FD3D52376CEBA9EE /* Pods-StefaniniChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
