@@ -17,7 +17,7 @@ protocol NetworkServiceProtocol: AnyObject {
 class NetworkService {
 
     private weak var delegate: NetworkServiceProtocol?
-    var searches: [Image]?
+    var searches: [Datum]?
     
     func setupDelegate(delegate: NetworkServiceProtocol?) {
         self.delegate = delegate

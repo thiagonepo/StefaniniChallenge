@@ -7,12 +7,14 @@
 
 import Foundation
 
-struct ImgurModel : Codable {
-    let data:[Image]?
+struct ImgurModel: Codable {
+    let data: [Datum]?
 }
 
-struct Image : Codable {
-    
-    let id:String?
-    let link:String?
+struct Datum: Codable {
+    let id: String?
+    let title: String?
+    let cover: String?
 }
+
+

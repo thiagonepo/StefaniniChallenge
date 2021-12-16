@@ -10,8 +10,9 @@ import UIKit
 class ImgurCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ImgurPhoto: UIImageView!
     
-    func cellSetup(with image: Image){
-        guard let link = image.link else { return }
-        ImgurPhoto.downloadImage(from: link)
+    func cellSetup(with image: Datum){
+        guard let cover = image.cover else { return }
+        let imageUrl: String = "https://i.imgur.com/\(cover).jpeg"
+        ImgurPhoto.downloadImage(from: imageUrl)
     }
 }

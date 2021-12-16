@@ -25,8 +25,6 @@ class ImgurViewController: UICollectionViewController {
         network.setupDelegate(delegate: self)
         searchTextField.delegate = self
         network.loadImage(with: "cats")
-        collectionView.register(UINib(nibName: "ImgurPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImgurPhotoCollectionViewCell")
-
     }
 
     // MARK: UICollectionViewDataSource
@@ -44,7 +42,7 @@ class ImgurViewController: UICollectionViewController {
         guard
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ImgurCollectionViewCell else { return UICollectionViewCell() }
         
-        let photo = network.searches?[indexPath.row] ?? Image(id: "", link: "")
+        let photo = network.searches?[indexPath.row] ?? Datum(id: nil, title: nil, cover: nil)
         cell.cellSetup(with: photo)
         return cell
     }

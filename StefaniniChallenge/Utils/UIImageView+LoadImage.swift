@@ -14,6 +14,7 @@ struct ImageCache {
 extension UIImageView {
     
     func downloadImage(from imageString: String?){
+        contentMode = .scaleAspectFill
         guard let imageString = imageString,
               let url = URL(string: imageString) else {
                   return
